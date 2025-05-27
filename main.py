@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.naive_bayes import MultinomialNB
 import os
 
 app = FastAPI()
@@ -44,7 +44,7 @@ vectorizer = TfidfVectorizer()
 X = vectorizer.fit_transform(df['Ticket Text'])
 y = df['Urgency']
 
-model = RandomForestClassifier(n_estimators=100, random_state=42)
+model = MultinomialNB()
 model.fit(X, y)
 
 # Step 3: Request Models
