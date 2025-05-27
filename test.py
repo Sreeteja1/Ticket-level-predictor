@@ -72,4 +72,3 @@ while True:
 # Optional: Save updated data to CSV
 df.to_csv("updated_tickets.csv", index=False)
 print("\nAll inputs saved to 'updated_tickets.csv'. Goodbye!")
-
