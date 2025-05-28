@@ -5,23 +5,27 @@ from sklearn.linear_model import LogisticRegression
 # 1. Initial data
 data = {
     'Ticket Text': [
-        "Server is down, need immediate assistance",
-        "How do I reset my password?",
-        "Payment failed multiple times, urgent fix needed",
-        "Unable to login after recent update",
-        "Requesting information on billing cycle",
-        "Mobile app crashes occasionally",
-        "Client presentation is not loading, urgent help",
-        "How to access archived messages?",
-        "System running very slow since last patch",
-        "Request for new user account creation",
-        "transaction failure"
+            "Server is down, need immediate assistance",     # High
+            "How do I reset my password?",                   # Low
+            "Payment failed multiple times, urgent fix",     # High
+            "Unable to login after recent update",           # Medium
+            "Requesting billing cycle information",          # Low
+            "App crashes once a week",                       # Medium
+            "Client presentation not loading, urgent",       # High
+            "How to access archived messages?",              # Low
+            "System very slow since last patch",             # Medium
+            "Request for user account creation",             # Low
+            "Transaction failure - need fix now",            # High
+            "Login issue with some delay",                   # Medium
+            "Report generation taking longer than usual",    # Medium
+            "Want to update my contact info",                # Low
+            "Getting intermittent errors in dashboard"       # Medium
     ],
     'Urgency': [
         
-        "High", "Low", "High", "High", "Low",
-        "Low", "High", "Low", "High", "Low",
-        "High"
+            "High", "Low", "High", "Medium", "Low",
+            "Medium", "High", "Low", "Medium", "Low",
+            "High", "Medium", "Medium", "Low", "Medium"
     ]
 }
 
