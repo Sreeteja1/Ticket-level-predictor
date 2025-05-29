@@ -15,7 +15,7 @@ if os.path.exists(csv_file):
     df = pd.read_csv(csv_file)
 else:
     df = pd.DataFrame({
-        'Ticket Text': [
+       'Ticket Text': [
             "Server is down, need immediate assistance",     # High
             "How do I reset my password?",                   # Low
             "Payment failed multiple times, urgent fix",     # High
@@ -30,13 +30,15 @@ else:
             "Login issue with some delay",                   # Medium
             "Report generation taking longer than usual",    # Medium
             "Want to update my contact info",                # Low
-            "Getting intermittent errors in dashboard"       # Medium
-        ],
-        'Urgency': [
+            "Getting intermittent errors in dashboard" ,     # Medium
+            "Working fine"                                   #Low
+    ],
+    'Urgency': [
+        
             "High", "Low", "High", "Medium", "Low",
             "Medium", "High", "Low", "Medium", "Low",
-            "High", "Medium", "Medium", "Low", "Medium"
-        ]
+            "High", "Medium", "Medium", "Low", "Medium",
+            "Low"
     })
 
 # Step 2: Train model
