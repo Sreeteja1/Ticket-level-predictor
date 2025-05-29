@@ -31,14 +31,15 @@ else:
             "Report generation taking longer than usual",    # Medium
             "Want to update my contact info",                # Low
             "Getting intermittent errors in dashboard" ,     # Medium
-            "Working fine"                                   #Low
+            "Working fine",                                  #Low
+           "API is not working"                              #High
     ],
     'Urgency': [
         
             "High", "Low", "High", "Medium", "Low",
             "Medium", "High", "Low", "Medium", "Low",
             "High", "Medium", "Medium", "Low", "Medium",
-            "Low"
+            "Low","High"
     ]
     })
 
