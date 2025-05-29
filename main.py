@@ -39,6 +39,7 @@ else:
             "Medium", "High", "Low", "Medium", "Low",
             "High", "Medium", "Medium", "Low", "Medium",
             "Low"
+    ]
     })
 
 # Step 2: Train model
