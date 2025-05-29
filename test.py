@@ -19,13 +19,15 @@ data = {
             "Login issue with some delay",                   # Medium
             "Report generation taking longer than usual",    # Medium
             "Want to update my contact info",                # Low
-            "Getting intermittent errors in dashboard"       # Medium
+            "Getting intermittent errors in dashboard" ,     # Medium
+            "Working fine"                                   #Low
     ],
     'Urgency': [
         
             "High", "Low", "High", "Medium", "Low",
             "Medium", "High", "Low", "Medium", "Low",
-            "High", "Medium", "Medium", "Low", "Medium"
+            "High", "Medium", "Medium", "Low", "Medium",
+            "Low"
     ]
 }
 
