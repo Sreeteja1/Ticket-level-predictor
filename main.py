@@ -32,14 +32,19 @@ else:
             "Want to update my contact info",                # Low
             "Getting intermittent errors in dashboard" ,     # Medium
             "Working fine",                                  #Low
-           "API is not working"                              #High
+           "API is not working",                             #High
+           "Documents are not available",                    #Low
+           "Badly Crashed",                                  #High
+           "Refund hasn't been received",                    #Medium
+           "Has been Received",                              #Low
+           "Invalid Response"                                #Medium
     ],
     'Urgency': [
         
             "High", "Low", "High", "Medium", "Low",
             "Medium", "High", "Low", "Medium", "Low",
             "High", "Medium", "Medium", "Low", "Medium",
-            "Low","High"
+            "Low","High","Low","High","Medium","Low","Medium"
     ]
     })
 
